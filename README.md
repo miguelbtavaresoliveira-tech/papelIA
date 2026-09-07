@@ -95,6 +95,7 @@ python -m venv .venv
 source .venv/bin/activate
 
 # 3. Instale as dependências
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 
 # 4. Copie o arquivo de exemplo e preencha seu token NOVO
@@ -103,6 +104,11 @@ cp .env.example .env
 
 # 5. Rode o servidor
 uvicorn main:app --reload --port 8000
+```
+
+#6. Outra forma de rodar o servidor
+```
+.\.venv\Scripts\python -m uvicorn main:app --reload --port 8000
 ```
 
 Se tudo estiver certo, o terminal mostra algo como:
@@ -151,3 +157,5 @@ resolver:
    servidor real, o ngrok não é adequado para produção (é uma ferramenta de
    desenvolvimento). As opções comuns são: um servidor próprio (VPS) atrás de
    HTTPS, ou serviços como Render/Railway/AWS/GCP.
+
+
