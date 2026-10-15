@@ -1,3 +1,3 @@
-﻿# PRD - papelIA
+# PRD - papelIA
 
 Documentacao inicial do projeto.
